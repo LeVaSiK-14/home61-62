@@ -1,0 +1,26 @@
+.last{
+    color: pink;
+}
+
+.item_list{
+    color: red;
+    font-size: 20px;
+    list-style-type: none;
+    font-weight: 900;
+}
+
+.count{
+    color: rgb(0, 18, 177);
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.section{
+    width: 600px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 50px;
+    margin: 0 auto;
+    background-color: greenyellow;
+    margin-bottom: 50px;
+}

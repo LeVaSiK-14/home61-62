@@ -1,0 +1,37 @@
+$primary-color: #333;
+$btn-main-color: rgb(49, 63, 17);
+$btn-hover-color: rgb(194, 245, 76);
+
+
+@mixin transform {
+    transform: rotate(-180deg);
+    background-color: $btn-main-color;
+    border: 1px $primary-color solid;
+    color:rgb(31, 204, 0);
+    padding: 15px 60px;
+    transition: 1s;
+    position: relative;
+}
+
+@mixin transform2 {
+    color: $primary-color;
+    transform: rotate(360deg);
+    background-color: $btn-hover-color;
+    padding: 15px 80px;
+    z-index: 1000;
+}
+
+
+
+.button{
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include transform();
+    &:hover{
+        @include transform2();
+    }
+}
+
+
